@@ -1,0 +1,11 @@
+{
+    "extensions.confirmedUriHandlerExtensionIds": [
+
+    ],
+    "files.associations": {
+        // extension name : html
+        "*.ejs": "html",
+        "*.js": "html"
+    },
+    "terminal.integrated.automationShell.windows": ""
+}
