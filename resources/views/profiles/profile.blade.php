@@ -7,7 +7,10 @@
         <img src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-1029171697.jpg" alt="Profile photo" class="p-3 rounded-circle" style="width: 100%; height:110%">
         </div>
         <div class="col-9 pt-5">
-        <h2> {{ Auth::user()->name }}</h2>
+        <div class="d-flex justify-content-between align-baseline">
+            <h2> {{ $user->username }}</h2>
+            <a href="#">Add New Post</a>
+    </div>
         <div class="d-flex">
             <div class="pr-3"><strong>51</strong> Posts</div>
             <div class="pr-3"><strong>21k</strong> Followers</div>
@@ -18,7 +21,7 @@
            <b>{{ $user->profile->title}}</b>
         </div>
         <div>
-        {{ $user->profile->Bio}}
+        {{ $user->profile->Bio}}`
         </div>
         <div class="pt-1">
             <a href="#"><b>{{ $user->profile->url}}<b></a>
